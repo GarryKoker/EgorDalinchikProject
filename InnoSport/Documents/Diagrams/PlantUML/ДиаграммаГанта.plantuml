@@ -1,0 +1,23 @@
+@startgantt
+language ru
+
+project starts the 2025-04-01
+
+[Документация] requires 7 days
+[Проектирование БД] requires 7 days
+[Разработка проекта] requires 21 days
+[Тестирование] requires 1 days
+[Зачёт] requires 1 days
+
+[Документация] starts at 2025-03-12
+[Проектирование БД] starts at 2025-03-12
+[Разработка проекта] starts at [Документация]'s end
+[Тестирование] starts at [Разработка проекта]'s end
+[Зачёт] starts at [Тестирование]'s end
+
+[Зачёт] is colored in pink
+
+Saturday are colored in LightPink
+Sunday are colored in LightPink
+
+@endgantt

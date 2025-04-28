@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InnoSport", "InnoSport\InnoSport.csproj", "{707F73BC-1896-411B-8772-9494AB64B2E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{764EA4EF-3452-47A7-B19D-379CCA1116CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{707F73BC-1896-411B-8772-9494AB64B2E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{707F73BC-1896-411B-8772-9494AB64B2E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{707F73BC-1896-411B-8772-9494AB64B2E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{707F73BC-1896-411B-8772-9494AB64B2E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{764EA4EF-3452-47A7-B19D-379CCA1116CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764EA4EF-3452-47A7-B19D-379CCA1116CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764EA4EF-3452-47A7-B19D-379CCA1116CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764EA4EF-3452-47A7-B19D-379CCA1116CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62DDF5C5-4D1A-46CA-9E79-D24BA50A2995}
+	EndGlobalSection
+EndGlobal

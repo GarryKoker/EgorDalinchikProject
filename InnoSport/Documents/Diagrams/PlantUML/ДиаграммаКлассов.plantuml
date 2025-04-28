@@ -1,0 +1,67 @@
+@startuml
+
+class Role{
+    + id: int
+    + Name: string <<get>> <<set>>
+    + Description: string <<get>> <<set>>
+}
+
+Section <--o User
+Role <--* User
+Section <--* User
+class User{
+    + id: int
+    + Name: string <<get>> <<set>>
+    + Surname: string <<get>> <<set>>
+    + PhoneNumber: string <<get>> <<set>>
+    + Roles: List<Role> <<get>> <<set>>
+    + Sections: List<Section> <<get>> <<set>>
+    + Password: string <<get>> <<set>>
+}
+
+Inventory <--o Section
+class Section{
+    + id: int
+    + Name: string <<get>> <<set>>
+    + Inventory: List<Inventory> <<get>> <<set>>
+}
+
+User <--* Schedule
+Section <--* Schedule
+class Schedule{
+    + id: int
+    + Date: DateTime <<get>> <<set>>
+    + Time: TimeSpan <<get>> <<set>>
+    + Section: Section <<get>> <<set>>
+    + User: User <<get>> <<set>>
+}
+
+User <--* Award
+Section <--* Award
+class Award{
+    + id: int
+    + Name: string <<get>> <<set>>
+    + Description: string <<get>> <<set>>
+    + Date: DateTime <<get>> <<set>>
+    + User: User <<get>> <<set>>
+    + Section: Section <<get>> <<set>>
+}
+
+Section <--* Inventory
+class Inventory{
+    + id: int
+    + Name: string <<get>> <<set>>
+    + Description: string <<get>> <<set>>
+    + Quantity: int <<get>> <<set>>
+    + Section: Section <<get>> <<set>>
+}
+
+Section <--o Zone
+class Zone{
+    + id: int
+    + Name: string <<get>> <<set>>
+    + Description: string <<get>> <<set>>
+    + Sections: List<Section> <<get>> <<set>>
+}
+
+@enduml

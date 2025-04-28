@@ -1,0 +1,75 @@
+# Общие исключения для всех проектов
+bin/
+obj/
+*.log
+*.user
+*.lock
+*.suo
+*.pdb
+*.cache
+*.tmp
+*.ide
+*.bak
+*.swp
+*.db
+
+# Исключения для Visual Studio
+.vs/
+.vscode/
+*.csproj.user
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+# Исключения для NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+.nuget/
+
+# Исключения для сборки
+artifacts/
+*.dll
+*.exe
+*.app
+*.so
+*.dylib
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Исключения для временных файлов системы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Исключения для SQLite базы данных
+*.db
+*.sqlite
+*.sqlite3
+
+# Исключения для Rider/JetBrains
+.idea/
+*.sln.iml
+
+# Исключения для тестов
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+*.testlog
+
+# Исключения для конфигураций
+appsettings.json
+appsettings.*.json
+secrets.json
+
+# Исключения для кэша
+.cache/
+*.log
