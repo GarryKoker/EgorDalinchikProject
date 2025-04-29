@@ -11,6 +11,8 @@ namespace InnoSport
 {
     public partial class LoginWindow : Window
     {
+
+        public static User AuthorizedUser { get; set; }
         public LoginWindow()
         {
             InitializeComponent();
@@ -46,6 +48,7 @@ namespace InnoSport
                                 MessageBox.Show("Неизвестная роль.");
                                 return;
                         }
+                        AuthorizedUser = user;
                         this.Close();
                     }
                     else

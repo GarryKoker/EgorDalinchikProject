@@ -31,6 +31,23 @@ namespace InnoSport.Views.Пользователь
             var selectedSection = SectionsDataGrid.SelectedItem as Section;
             if (selectedSection != null)
             {
+                using (var db = new AppDBContext())
+                {
+                    var user = db.Users.FirstOrDefault(u => u.Id == LoginWindow.AuthorizedUser.Id);
+                    if (user != null)
+                    {
+                        var userSection = new UserSection
+                        {
+                            UserId = user.Id,
+                            SectionId = selectedSection.Id,
+                        };
+
+                        user.Role = Roles.Спортсмен;
+
+                        db.UserSections.Add(userSection);
+                        db.SaveChanges();
+                    }
+                }
                 MessageBox.Show($"Вы присоединились к секции: {selectedSection.Name}");
             }
             else
